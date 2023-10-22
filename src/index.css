@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #212121;
+  --light: #ffffff;
+  --light-grey: #757575;
+  --font-family: 'montserrat-medium', sans-serif;
+}
+
+html {
+  background-color: var(--light);
+  font-family: var(--font-family), Arial, sans-serif;
+  color: var(--dark);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 0.15rem;
+  cursor: pointer;
+}
+
+.btn:active,
+a:active,
+li:active {
+  transform: translateY(2px);
+  filter: brightness(0.8);
+  transition: all 0s linear !important;
+}

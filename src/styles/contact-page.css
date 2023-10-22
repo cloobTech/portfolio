@@ -1,0 +1,98 @@
+.contacts {
+  min-height: 100vh;
+  position: relative;
+  background-color: #111;
+  color: #fff;
+  /* z-index: -1; */
+}
+
+.contacts div.background-img {
+  background-image: url('../assets/contact-page-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.contacts > section {
+  padding: 70px 0;
+  position: relative;
+  background: transparent;
+}
+
+.contacts-title {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contacts-title > p  {
+  color: var(--light-grey) !important;
+}
+.contacts-title > h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+.contacts-title > h1::after {
+  position: absolute;
+  width: 60%;
+  content: '';
+  height: 4px;
+  background-color: var(--light-grey);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-info > div {
+  margin: 1rem 0;
+}
+
+.contact-info > div > h3 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info > div > p > a{
+  color: var(--light-grey);
+}
+
+.contact-info div.message-container input,
+.contact-info div.message-container textarea,
+.contact-info div.message-container button {
+  display: block;
+  width: min(600px, 100%);
+  padding: 0.5rem;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts div.background-img {
+    background-size: contain;
+  }
+
+  .contacts-title > p {
+    display: none;
+  }
+
+  .contacts-title > h1 {
+    font-size: 3rem;
+  }
+
+  .contact-info{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 481px) {
+    .contacts div.background-img {
+    background-size: contain;
+  }
+
+}

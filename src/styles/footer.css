@@ -1,0 +1,40 @@
+.footer {
+  background-color: #111;
+  user-select: none;
+}
+
+.footer > section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.footer .logo {
+  font-weight: 700;
+  border: 1px solid var(--light);
+  padding: 0.125rem;
+  padding-top: 0.15rem;
+  display: inline-block;
+  color: var(--light);
+  margin: 5rem 0;
+  margin-bottom: 1rem;
+}
+
+.footer .logo > span:first-child {
+  color: var(--dark);
+  background-color: var(--light);
+  padding: 0 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.footer p {
+  color: var(--light);
+  max-width: 700px;
+  text-align: center;
+}
+
+.footer .copy-right{
+    color: var(--light-grey);
+    margin: 1rem 0;
+}

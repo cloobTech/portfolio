@@ -1,0 +1,37 @@
+.scroll-to-home {
+  transition: all 0.3s linear;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 30px;
+  width: 30px;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+}
+
+.scroll-to-home > a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #212121;
+}
+
+.scroll-to-home > a:hover {
+  filter: brightness(0.8);
+}
+
+.scroll-to-home:active {
+  transform: translateY(4px);
+}
+
+.scroll-to-home.show {
+  opacity: 1;
+}
+
+.scroll-to-home.hide {
+  opacity: 0;
+}
