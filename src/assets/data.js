@@ -1,4 +1,3 @@
-import mongo from '../assets/logos/mongoDb.png';
 import python from '../assets/logos/python.png';
 import nginx from '../assets/logos/nginx.png';
 import react from '../assets/logos/react.png';
@@ -9,10 +8,11 @@ import typescript from '../assets/logos/typescript.png';
 
 export const projectCardDetails = [
   {
-    title: 'Thrift Manager',
+    title: 'Smart Thrift',
     description: 'Loan and Thrift Management Application',
     stackImg: [python, react, mysql, redis, typescript],
-    liveSite: '',
+    liveSite:
+      'https://drive.google.com/file/d/1lyEp6nPbluGa3LoeDZOdulIsBRCkg0Jw/view?usp=share_link',
     github: 'https://github.com/cloobTech/Smart_Thrift',
   },
   {
@@ -26,7 +26,7 @@ export const projectCardDetails = [
     title: 'Cloob Sales',
     description: 'Simple E-commerce website with payment options',
     stackImg: [react, firebase],
-    liveSite: '',
+    liveSite: 'https://cloob-sales.web.app/',
     github: 'https://github.com/cloobTech/cloob-sales',
   },
 ];
