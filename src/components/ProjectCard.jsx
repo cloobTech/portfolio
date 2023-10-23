@@ -29,7 +29,7 @@ function ProjectCard({ title, description, stackImg, liveSite, github }) {
       <div className='project-card-btns'>
         <a href={liveSite} target='blank'>
           <i class='fa-solid fa-globe'></i>
-          <span>Live / Demo</span>
+          <span>Demo</span>
           <span className='is-hover'></span>
         </a>
         <a href={github} target='blank'>

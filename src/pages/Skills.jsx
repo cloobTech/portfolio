@@ -187,7 +187,6 @@ const Skills = () => {
             <ul>
               <li>Great communicator</li>
               <li>Good Collaborator</li>
-              <li>NoSql - Google Firestore</li>
             </ul>
           </motion.div>
           <motion.div
