@@ -77,4 +77,8 @@
   .skills-title > h1 {
     font-size: 3rem;
   }
+
+  .skills > section {
+  padding: 2rem 0;
+}
 }

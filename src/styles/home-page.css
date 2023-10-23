@@ -1,5 +1,5 @@
 .home-page {
-  height: 100vh;
+  height: 100dvh;
   color: var(--dark);
   user-select: none;
   background-color: var(--light);

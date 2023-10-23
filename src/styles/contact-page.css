@@ -28,7 +28,7 @@
   text-align: center;
 }
 
-.contacts-title > p  {
+.contacts-title > p {
   color: var(--light-grey) !important;
 }
 .contacts-title > h1 {
@@ -58,7 +58,7 @@
   margin-bottom: 0.5rem;
 }
 
-.contact-info > div > p > a{
+.contact-info > div > p > a {
   color: var(--light-grey);
 }
 
@@ -73,6 +73,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  .contacts > section {
+    padding: 2rem 0;
+  }
+
   .contacts div.background-img {
     background-size: contain;
   }
@@ -85,14 +89,16 @@
     font-size: 3rem;
   }
 
-  .contact-info{
+  .contact-info {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 900px) and (min-width: 481px) {
-    .contacts div.background-img {
+  .contacts div.background-img {
     background-size: contain;
   }
-
+  .contacts > section {
+    padding: 2rem 0;
+  }
 }

@@ -66,4 +66,8 @@
   .about-body {
     font-size: 1rem;
   }
+
+  .about > section {
+  padding: 2rem 0;
+}
 }
