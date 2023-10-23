@@ -19,7 +19,7 @@ export const projectCardDetails = [
     title: 'TaskPilot',
     description: 'Project Managemnet Application',
     stackImg: [python, nginx, react, mysql],
-    liveSite: '',
+    liveSite: 'https://taskpilot.me',
     github: 'https://github.com/cloobTech/TaskPilot',
   },
   {

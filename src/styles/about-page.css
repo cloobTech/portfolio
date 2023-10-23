@@ -49,7 +49,8 @@
 }
 
 .about-body {
-  width: min(80%, 900px);
+  /* width: min(80%, 900px); */
+  width: 100%;
   margin: 0 auto;
   font-size: 1.5rem;
   font-weight: 300 !important;
