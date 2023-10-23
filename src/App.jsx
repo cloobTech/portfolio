@@ -1,7 +1,7 @@
 import ParallexImg from './components/ParallexImg';
 import About from './pages/About';
 import Home from './pages/Home';
-import Skills from './pages/skills';
+import Skills from './pages/Skills';
 import { AnimatePresence } from 'framer-motion';
 import Projects from './pages/Projects';
 import ScrollToHome from './components/ScrollToHome';
