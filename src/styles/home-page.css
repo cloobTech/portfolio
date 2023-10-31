@@ -93,7 +93,7 @@ nav > .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -216,9 +216,9 @@ nav > .navbar {
 }
 
 @media screen and (max-width: 500px) {
-  .home-page {
+  /* .home-page {
     height: calc(100vh - 58px);
-  }
+  } */
 
   .navbar {
     z-index: 10;
