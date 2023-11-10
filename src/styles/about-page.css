@@ -3,6 +3,7 @@
   color: var(--light);
   text-align: center;
   padding-bottom: 30px;
+  min-height: 100vh;
 }
 
 .about > section {

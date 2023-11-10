@@ -4,6 +4,54 @@ import '../styles/projects-page.css';
 import ProjectCard from '../components/ProjectCard';
 import { projectCardDetails } from '../assets/data';
 
+const cardArrayVariants = [
+  {
+    hidden: {
+      opacity: 0,
+      y: 300,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: 'easeOut',
+        delay: 0.5,
+      },
+    },
+  },
+  {
+    hidden: {
+      opacity: 0,
+      y: 300,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: 'easeOut',
+        delay: 1,
+      },
+    },
+  },
+  {
+    hidden: {
+      opacity: 0,
+      y: 300,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: 'easeOut',
+        delay: 1.5,
+      },
+    },
+  },
+];
+
 const Projects = () => {
   const [animationTriggered, setAnimationTriggered] = useState(false);
   const controls = useAnimation();
@@ -78,7 +126,12 @@ const Projects = () => {
           {
             // fix project details
             projectCardDetails.map((props, index) => (
-              <ProjectCard key={index} {...props} />
+              <ProjectCard
+                key={index}
+                {...props}
+                controls={controls}
+                variants={cardArrayVariants[index]}
+              />
             ))
           }
         </motion.div>

@@ -1,9 +1,23 @@
 import React from 'react';
 import '../styles/projects-page.css';
+import { motion } from 'framer-motion';
 
-function ProjectCard({ title, description, stackImg, liveSite, github }) {
+function ProjectCard({
+  title,
+  description,
+  stackImg,
+  liveSite,
+  github,
+  controls,
+  variants,
+}) {
   return (
-    <div className='project-card'>
+    <motion.div
+      initial='hidden'
+      className='project-card'
+      animate={controls}
+      variants={variants}
+    >
       <h2 className='title'>{title}</h2>
       <p className='desc'>{description}</p>
 
@@ -38,7 +52,7 @@ function ProjectCard({ title, description, stackImg, liveSite, github }) {
           <span className='is-hover'></span>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
