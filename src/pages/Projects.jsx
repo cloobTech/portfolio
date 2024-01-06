@@ -31,7 +31,7 @@ const cardArrayVariants = [
       transition: {
         duration: 0.5,
         ease: 'easeOut',
-        delay: 1,
+        delay: 1.25,
       },
     },
   },
@@ -46,7 +46,7 @@ const cardArrayVariants = [
       transition: {
         duration: 0.5,
         ease: 'easeOut',
-        delay: 1.5,
+        delay: 1.75,
       },
     },
   },

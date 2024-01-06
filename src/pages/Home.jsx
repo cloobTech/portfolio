@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-
+import ParticleComponent from './ParticlesJs';
 import resume from '../assets/resume.pdf';
 
 import '../styles/home-page.css';
@@ -20,6 +20,7 @@ const Home = () => {
         setScrolled(false);
       }
     };
+    
 
     window.addEventListener('scroll', handleScroll);
 
@@ -50,6 +51,8 @@ const Home = () => {
 
   return (
     <div className='home-page' id='home'>
+      {/*Particles Animation*/}
+      <ParticleComponent/>
       {/* Nav Section */}
       <nav className={`${(scrolled || sideBar) && 'onscroll-style'}`}>
         <div className='navbar container'>
@@ -143,7 +146,7 @@ const Home = () => {
               <motion.span variants={letterAnimation}>e</motion.span>
               <motion.span variants={letterAnimation}>r</motion.span>
             </motion.h1>
-            <motion.p variants={fadeAnimation}>
+            <motion.p variants={fadeAnimation} className='catch-phrase'>
               Transforming Ideas into seamless <br /> Digital Experience...
             </motion.p>
           </div>
