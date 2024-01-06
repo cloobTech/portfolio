@@ -2,7 +2,7 @@
   height: 100dvh;
   color: var(--dark);
   user-select: none;
-  background-color: var(--light);
+  /* background-color: var(--light); */
 }
 
 nav {
@@ -11,7 +11,7 @@ nav {
   max-width: 2000px;
   top: 0;
   left: 0;
-  background-color: var(--light);
+  /* background-color: var(--light); */
   z-index: 10;
 }
 
@@ -22,6 +22,8 @@ nav {
 .onscroll-style {
   box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.3);
   transition: all 0.3s linear;
+  transition: background 0.5s linear;
+  background: #fff;
 }
 
 .home-page a {
@@ -125,6 +127,10 @@ nav > .navbar {
   margin-top: 1rem;
 }
 
+.catch-phrase {
+  color: #333 !important;
+}
+
 .hero-section-btn > a {
   cursor: pointer;
   font-size: 1.25rem;
@@ -223,6 +229,7 @@ nav > .navbar {
   .navbar {
     z-index: 10;
   }
+
   .navbar > .nav-links {
     position: absolute;
     flex-direction: column;
@@ -263,6 +270,7 @@ nav > .navbar {
   .show-sidebar > li:hover {
     background-color: var(--dark);
   }
+
   .show-sidebar > li:hover > a {
     color: var(--light);
   }

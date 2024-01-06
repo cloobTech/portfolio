@@ -164,22 +164,17 @@ const Home = () => {
         <ul className='social-medial-links'>
           <li className='social-medial-link' title='github'>
             <a href=''>
-              <i class='fa-brands fa-github'></i>
+              <i className='fa-brands fa-github'></i>
             </a>
           </li>
           <li className='social-medial-link' title='linkedin'>
             <a href=''>
-              <i class='fa-brands fa-linkedin-in'></i>
+              <i className='fa-brands fa-linkedin-in'></i>
             </a>
           </li>
           <li className='social-medial-link' title='twitter'>
             <a href=''>
-              <i class='fa-brands fa-twitter'></i>
-            </a>
-          </li>
-          <li className='social-medial-link' title='facebook'>
-            <a href=''>
-              <i class='fa-brands fa-facebook'></i>
+              <i className='fa-brands fa-facebook'></i>
             </a>
           </li>
         </ul>
@@ -195,7 +190,7 @@ const Home = () => {
           <p>
             <li className='social-medial-link' title='scroll down'>
               <a href='#about'>
-                <i class='fa-solid fa-down-long'></i>
+                <i className='fa-solid fa-down-long'></i>
               </a>
             </li>
             <a href='#about' className='scroll-down-text'>

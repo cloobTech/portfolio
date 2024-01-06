@@ -24,9 +24,9 @@ function ProjectCard({
       <div className='stack'>
         <h4>Stack</h4>
         <ul>
-          {stackImg.map((url) => {
+          {stackImg.map((url, index) => {
             return (
-              <li>
+              <li key={index}>
                 <p
                   style={{
                     backgroundImage: `url(${url})`,
@@ -42,12 +42,12 @@ function ProjectCard({
 
       <div className='project-card-btns'>
         <a href={liveSite} target='blank'>
-          <i class='fa-solid fa-globe'></i>
+          <i className='fa-solid fa-globe'></i>
           <span>Demo</span>
           <span className='is-hover'></span>
         </a>
         <a href={github} target='blank'>
-          <i class='fa-brands fa-github'></i>
+          <i className='fa-brands fa-github'></i>
           <span>Github</span>
           <span className='is-hover'></span>
         </a>
